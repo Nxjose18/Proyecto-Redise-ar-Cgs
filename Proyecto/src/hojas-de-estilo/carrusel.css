@@ -1,0 +1,99 @@
+        .products-grid {
+            display: flex;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            flex: 1;
+        }
+
+        /* --- TARJETA DE PRODUCTO --- */
+        .product-card {
+            background: white;
+            border-radius: 18px;
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .p-name {
+            font-size: 0.65rem;
+            font-weight: 800;
+            text-align: center;
+            color: #333;
+            margin-bottom: 12px;
+            height: 35px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+        }
+
+        .p-tags {
+            display: flex;
+            width: 100%;
+            gap: 4px;
+            margin-bottom: 12px;
+        }
+
+        .tag-price, .tag-stock {
+            background-color: #00ced1; /* Turquesa */
+            color: white;
+            font-size: 0.6rem;
+            padding: 4px 2px;
+            border-radius: 5px;
+            flex: 1;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .qty-selector {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .qty-btn {
+            background-color: #8c82bc; /* Morado */
+            color: white;
+            border: none;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+        }
+
+        .cart-btn {
+            background-color: #d1d0e8;
+            border: 1px solid #8c82bc;
+            border-radius: 20px;
+            width: 100%;
+            padding: 6px;
+            font-size: 0.7rem;
+            font-weight: bold;
+            color: #444;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            transition: 0.3s;
+        }
+
+        .cart-btn:hover {
+            background-color: #8c82bc;
+            color: white;
+        }

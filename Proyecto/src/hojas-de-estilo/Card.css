@@ -1,0 +1,30 @@
+/* CATEGORÍAS */
+.categorias {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
+  background: rgb(223, 219, 219);
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.2s;
+  overflow: hidden; /* Esto asegura que las esquinas redondeadas se apliquen correctamente */
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover; /* cover hace que la imagen llene el espacio y el border-radius se note */
+  border-radius: 15px; /* coincide con el contenedor o ajusta como quieras */
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+

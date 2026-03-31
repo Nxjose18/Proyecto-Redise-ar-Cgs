@@ -1,0 +1,63 @@
+/* HEADER */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1c1c1c;
+  color: white;
+  padding: 10px 20px;
+}
+
+.top-bar input {
+  width: 40%;
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+}
+
+nav {
+  background: rgba(4, 10, 80, 0.926);
+  display: flex;
+  justify-content: center;
+  gap: 180px;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* --- ADAPTACIÓN HEADER PARA IPHONE 14 PRO MAX --- */
+@media (max-width: 440px) {
+    
+    /* Reordenamos la barra superior */
+    .top-bar {
+        flex-direction: column; /* Apilamos logo/título y buscador */
+        gap: 10px;
+        padding: 15px;
+    }
+
+    /* El buscador ahora ocupa casi todo el ancho para que sea fácil escribir */
+    .top-bar input {
+        width: 100%;
+        padding: 12px; /* Más alto para que sea fácil de tocar con el dedo */
+        font-size: 16px; /* Evita que el iPhone haga zoom automático al enfocar */
+    }
+
+    /* El menú de navegación */
+    nav {
+        gap: 20px;       /* Reducimos el gap gigante de 180px */
+        flex-wrap: wrap; /* Si hay muchos enlaces, bajan a la siguiente línea */
+        padding: 15px 10px;
+        justify-content: space-around; /* Distribuye los enlaces equitativamente */
+    }
+
+    nav a {
+        font-size: 14px;
+        font-weight: bold;
+        padding: 8px 12px;
+        background: rgba(255, 255, 255, 0.1); /* Un fondo sutil para que parezcan botones */
+        border-radius: 8px;
+    }
+}

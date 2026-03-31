@@ -1,0 +1,71 @@
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* efecto hover */
+li:hover {
+    background: #b1acd6;
+    border-radius: 8px;
+}
+
+.icono {
+    display: flex;
+    gap: 4px;
+}
+
+/* BARRAS */
+.barra {
+    width: 6px;
+    height: 18px;
+    transform: skew(-25deg);
+}
+
+/* COLORES */
+.b1 {
+    background: #dacfc1;
+}
+
+.b2 {
+    background: #8f8b86;
+}
+
+.b3 {
+    background: #5a4f43;
+}
+
+/* --- OPTIMIZACIÓN DE ELEMENTOS DE LISTA E ICONOS --- */
+@media (max-width: 440px) {
+    
+    li {
+        padding: 14px 18px; /* Aumentamos el área de clic para el pulgar */
+        margin: 8px 0;      /* Separamos un poco más los ítems para evitar clics accidentales */
+        gap: 12px;
+        border-radius: 12px;
+    }
+
+
+
+    /* Ajuste de las barras decorativas */
+    .barra {
+        width: 5px;   /* Un poco más delgadas para verse más finas */
+        height: 16px; 
+        transform: skew(-20deg); /* Reducimos el skew para que no se vean tan estiradas */
+    }
+
+    .icono {
+        gap: 3px; /* Espacio más cerrado entre las 3 barras */
+    }
+    
+    /* Si tienes texto dentro del li, ajustamos el tamaño */
+    li span, li p {
+        font-size: 16px; /* Tamaño estándar ideal para lectura en iOS */
+        font-weight: 500;
+    }
+}
