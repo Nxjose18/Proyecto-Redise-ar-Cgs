@@ -3,11 +3,13 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
-  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .card {
-  background: rgb(223, 219, 219);
+  height: 100%;
+  background: #E3E5FA;
   padding: 20px;
   text-align: center;
   border-radius: 15px;
